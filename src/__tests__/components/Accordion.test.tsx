@@ -1,6 +1,6 @@
 import { describe, test, expect, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Accordion from "./Accordion";
+import Accordion from "../../components/Accordion";
 describe("Accordion test", () => {
   beforeEach(() => {
     render(
