@@ -10,7 +10,7 @@ describe("Accordion test", () => {
     );
   });
   test("Should show title", () => {
-    expect(screen.getByText(/Testing/i)).toBeDefined();
+    expect(screen.getByText(/Testing/i)).toBeInTheDocument();
   });
 
   test("should not show the content at the start", () => {
@@ -21,6 +21,6 @@ describe("Accordion test", () => {
     const title = screen.getByText(/Show/i);
     fireEvent.click(title);
 
-    expect(await screen.findByText(/Content/i)).toBeDefined();
+    expect(await screen.findByText(/Content/i)).toBeInTheDocument();
   });
 });
